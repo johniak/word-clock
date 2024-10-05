@@ -31,6 +31,8 @@ class WordClock:
             return "OCLOCK"
         elif minute < 10:
             return "FIVE"
+        elif minute < 15:
+            return "TEN"
         elif minute < 20:
             return "FIFTEEN"
         elif minute < 25:

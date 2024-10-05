@@ -6,6 +6,19 @@ import neopixel
 
 """
 Clock Display Hardware Abstraction Layer
+
+Display letters and indexes
+131 ITLISASTHPMA 120
+108 ACFIFTEENDCO 119
+107 TWENTYFIVEXW 096
+084 THIRTYXTENXW 095
+083 MINUTESETOUR 072
+060 PASTORUFOURT 071
+059 SEVENXTWELVE 048
+036 NINEFIVECTWO 047
+035 EIGHTFELEVEN 024
+012 SIXTHREEONEG 023
+011 TENSEZOCLOCK 000
 """
 class ClockDisplayHAL:
     WIDTH = 12
@@ -33,6 +46,7 @@ class ClockDisplayHAL:
         "TWENTY": (102, 107),
         "TWENTYFIVE": (98, 107),
         "FIVE": (98, 101),
+        "TEN": (91, 93),
         "FIFTEEN": (110, 116),
         "IS": (127, 128),
         "IT": (130, 131),
