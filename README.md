@@ -1,6 +1,8 @@
 # Word Clock Project
 ## Overview
 The Word Clock project features two main platforms: ESP32 and Raspberry Pi. This project allows you to display the time in a creative word format and includes functionalities for handling GIF animations.
+
+
 Yo can find printing models on https://makerworld.com/en/models/686196#profileId-614840
 
 ![Word Clock demo](wordclock.jpg)
