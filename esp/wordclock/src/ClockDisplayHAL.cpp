@@ -48,7 +48,6 @@ uint16_t ClockDisplayHAL::cartesianToWordClockLEDStripIndex(uint8_t x, uint8_t y
 
     if (index < 0 || index >= NUM_LEDS)
     {
-        // Add your error handling here
         return 0;
     }
 

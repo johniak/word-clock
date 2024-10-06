@@ -1,25 +1,27 @@
 #include <Arduino.h>
-#include <Adafruit_NeoPixel.h>
 #include "ClockDisplayHAL.h"
-#include "NetworkTimeHelper.h"
+#include "NetworkManager.h"
 #include "SerialHelper.h"
 #include "config.h"
+#include "GifPlayer.h"
 #include "WordClock.h"
 
-NetworkTimeHelper timeHelper(WIFI_SSID, WIFI_PASSWORD, GMT_OFFSET_SEC, DAYLIGHT_OFFSET_SEC);
+NetworkManager networkManager(WIFI_SSID, WIFI_PASSWORD, GMT_OFFSET_SEC, DAYLIGHT_OFFSET_SEC);
 ClockDisplayHAL clockDisplayHAL(LED_PIN, 255);
-WordClock wordClock(&clockDisplayHAL, &timeHelper);
+GifPlayer gifPlayer(&clockDisplayHAL);
+WordClock wordClock(&clockDisplayHAL, &networkManager, &gifPlayer);
 
 void setup()
 {
-    initSerial();
-    timeHelper.setup();
-    clockDisplayHAL.setup();
+  initSerial();
+  networkManager.setup();
+  clockDisplayHAL.setup();
+  wordClock.setup();
 }
 
 void loop()
 {
-    timeHelper.update();
-    wordClock.displayTime();
-    delay(1000);
+  networkManager.update();
+  wordClock.displayTime();
+  delay(1000);
 }
