@@ -29,7 +29,7 @@ word-clock-main/
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:johniak/word-clock.git
    cd word-clock-main/raspberry-pi
    ```
 
