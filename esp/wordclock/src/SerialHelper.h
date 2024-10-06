@@ -5,13 +5,13 @@
 #include "config.h"
 
 #if USE_SERIAL
-    #define SERIAL_PRINT(x) Serial.print(x)
-    #define SERIAL_PRINTLN(x) Serial.println(x)
+#define SERIAL_PRINT(x) Serial.print(x)
+#define SERIAL_PRINTLN(x) Serial.println(x)
 #else
-    #define SERIAL_PRINT(x)
-    #define SERIAL_PRINTLN(x)
+#define SERIAL_PRINT(x)
+#define SERIAL_PRINTLN(x)
 #endif
 
-void initSerial();  // Function to initialize serial if needed
+void initSerial();
 
 #endif

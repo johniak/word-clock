@@ -11,6 +11,7 @@ public:
     static const uint16_t NUM_LEDS = WIDTH * HEIGHT;
 
     ClockDisplayHAL(uint8_t pin, uint8_t brightness);
+    Adafruit_NeoPixel pixels;
     void setup();
     void displayWord(const String &word, uint32_t color);
     void setPixel(uint8_t x, uint8_t y, uint32_t color);
@@ -18,7 +19,6 @@ public:
     void show();
 
 private:
-    Adafruit_NeoPixel pixels;
     uint8_t brightness;
 
     static const struct WordMapping
