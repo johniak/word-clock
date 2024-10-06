@@ -3,35 +3,56 @@
 ## Overview
 The Word Clock project features two main platforms: ESP32 and Raspberry Pi. This project allows you to display the time in a creative word format and includes functionalities for handling GIF animations.
 
+## Directory Structure
+```
+word-clock-main/
+├── .gitignore
+├── README.md
+├── esp/
+│   └── wordclock/
+└── raspberry-pi/
+    ├── heart_art_small.gif
+    ├── install.sh
+    ├── requirements.txt
+    ├── src/
+    │   └── wordclock/
+    │       ├── __init__.py
+    │       ├── clock_display_hal.py
+    │       ├── gif.py
+    │       ├── main.py
+    │       └── word_clock.py
+    └── sync.sh
+```
+
 ## Setup Instructions
 
 ### Raspberry Pi
 
 1. **Clone the Repository**
-   \```bash
+   ```bash
    git clone <repository-url>
    cd word-clock-main/raspberry-pi
-   \```
+   ```
 
 2. **Install Dependencies**
    Ensure you have the required dependencies installed. Run the following command:
-   \```bash
+   ```bash
    sudo apt-get install python3 python3-pip
    pip3 install -r requirements.txt
-   \```
+   ```
 
 3. **Run the Install Script**
    The `install.sh` script will set up the necessary configurations. Run the following command:
-   \```bash
+   ```bash
    chmod +x install.sh
    ./install.sh
-   \```
+   ```
 
 4. **Running the Application**
    To start the word clock application without a service, use:
-   \```bash
+   ```bash
    sudo python3 src/wordclock/main.py --pin D12 --brightness 0.5 --gif ../../heart-art.gif
-   \```
+   ```
 
 5. **Setup as a Service**
    If you want to run the word clock as a service, ensure the service is configured correctly in your system.
@@ -55,10 +76,10 @@ The `sync.sh` script is included to help synchronize files between a source dire
 
 1. **Run the Sync Script**
    To synchronize the files, execute the following command in the terminal:
-   \```bash
+   ```bash
    chmod +x sync.sh
    ./sync.sh /path/to/source /path/to/target
-   \```
+   ```
    Replace `/path/to/source` and `/path/to/target` with the actual paths you want to synchronize.
 
 2. **Automatic Sync**
