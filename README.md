@@ -41,15 +41,14 @@ word-clock-main/
    pip3 install -r requirements.txt
    ```
 
-3. **Run the Install Script**
+3. **To start as a service. Run the Install Script**
    The `install.sh` script will set up the necessary configurations. Run the following command:
    ```bash
    chmod +x install.sh
    ./install.sh
    ```
 
-4. **Running the Application**
-   To start the word clock application without a service, use:
+4. **To start the word clock application without a service, use:**
    ```bash
    sudo python3 src/wordclock/main.py --pin D12 --brightness 0.5 --gif ../../heart-art.gif
    ```
