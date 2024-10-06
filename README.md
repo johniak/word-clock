@@ -3,27 +3,6 @@
 ## Overview
 The Word Clock project features two main platforms: ESP32 and Raspberry Pi. This project allows you to display the time in a creative word format and includes functionalities for handling GIF animations.
 
-## Directory Structure
-\```
-word-clock-main/
-├── .gitignore
-├── README.md
-├── esp/
-│   └── wordclock/
-└── raspberry-pi/
-    ├── heart_art_small.gif
-    ├── install.sh
-    ├── requirements.txt
-    ├── src/
-    │   └── wordclock/
-    │       ├── __init__.py
-    │       ├── clock_display_hal.py
-    │       ├── gif.py
-    │       ├── main.py
-    │       └── word_clock.py
-    └── sync.sh
-\```
-
 ## Setup Instructions
 
 ### Raspberry Pi
