@@ -1,0 +1,4 @@
+Adafruit-Blinka==8.47.0
+Pillow==8.1.2
+rpi-ws281x==5.0.0
+adafruit-circuitpython-neopixel==6.3.11
