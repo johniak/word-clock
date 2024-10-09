@@ -64,10 +64,12 @@ word-clock-main/
 1. **Setup PlatformIO**
    Make sure you have [PlatformIO](https://platformio.org/) installed in your IDE.
 
-2. **Open the Project**
+1. **Open the Project**
    Open the `wordclock` directory in PlatformIO.
-
-3. **Upload the Code**
+1. **Configuration**
+   Make a copy of `esp/wordclock/src/config.h.example` and rename it to `esp/wordclock/src/config.h`.
+   You need to set there the WiFi SSID and password, and time zone informations.
+1. **Upload the Code**
    Connect your ESP32 board to your computer and upload the code using the PlatformIO upload button.
 
 ## Synchronization
