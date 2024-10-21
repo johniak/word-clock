@@ -8,5 +8,6 @@
 
    You need to set there the WiFi SSID and password, and time zone informations.
 1. Connect your Word Clock following the [device build instructions](device_build.md).
+1. Make sure that you have the ESP32 board selected in the `platforn.ini` configuration.
 1. **Upload the Code**
    Connect your ESP32 board to your computer and upload the code using the PlatformIO upload button.

@@ -69,3 +69,6 @@ The `sync.sh` script is included to help synchronize files between a source dire
 
 - Ensure that your Raspberry Pi has a stable internet connection for the initial setup and for the synchronization process.
 - For the ESP32, make sure you have the correct board selected in PlatformIO.
+
+Legal:
+The provided project, including all instructions and materials, is shared for informational purposes only and is offered without any express or implied warranties. I disclaim all liability for any damages, losses, or injuries that may occur as a result of using, modifying, or following the instructions in this project. The project is shared 'as is,' and I make no guarantees regarding its functionality or suitability for any particular purpose. Use this project at your own risk, and be aware that results may vary based on individual implementation.
