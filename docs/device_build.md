@@ -41,7 +41,7 @@
 
       ![Step Image](assets/wires_soldered.jpeg)
 
-6. Upload the program to the microcontroller of your choice according to the instructions for Raspberry Pi Zero or ESP32. Disconnect it from power before proceeding with the next steps. Attach the front plate, ensuring that the cable is in the bottom right corner.
+6. Upload the program to the microcontroller of your choice according to the instructions for [Raspberry Pi Zero](installation_raspberry.md) or [ESP32](installation_esp32.md). Disconnect it from power before proceeding with the next steps. Attach the front plate, ensuring that the cable is in the bottom right corner.
    
 ![Step Image](assets/cable_position.jpeg)
 
