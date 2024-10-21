@@ -34,49 +34,13 @@ word-clock-main/
 
 ### Raspberry Pi
 
-1. **Clone the Repository**
-   ```bash
-   git clone git@github.com:johniak/word-clock.git
-   cd word-clock-main/raspberry-pi
-   ```
-
-2. **Install Dependencies**
-   Ensure you have the required dependencies installed. Run the following command:
-   ```bash
-   sudo apt-get install python3 python3-pip
-   pip3 install -r requirements.txt
-   ```
-
-3. **To start as a service. Run the Install Script**
-   The `install.sh` script will set up the necessary configurations. Run the following command:
-   ```bash
-   chmod +x install.sh
-   ./install.sh
-   ```
-
-4. **To start the word clock application without a service, use:**
-   ```bash
-   sudo python3 src/wordclock/main.py --pin D12 --brightness 0.5 --gif ../../heart-art.gif
-   ```
-
-5. **Setup as a Service**
-   If you want to run the word clock as a service, ensure the service is configured correctly in your system.
+Docs for Raspberry Pi installation can be found [here](docs/installation_raspberry.md)
 
 ### ESP32
 
-1. **Setup PlatformIO**
-   Make sure you have [PlatformIO](https://platformio.org/) installed in your IDE.
+Docs for ESP32 installation can be found [here](docs/installation_esp32.md)
 
-1. **Open the Project**
-   Open the `wordclock` directory in PlatformIO.
-1. **Configuration**
-
-   Make a copy of `esp/wordclock/src/config.h.example` and rename it to `esp/wordclock/src/config.h`.
-   You need to set there the WiFi SSID and password, and time zone informations.
-1. **Upload the Code**
-   Connect your ESP32 board to your computer and upload the code using the PlatformIO upload button.
-
-## Synchronization
+## Development
 
 The `sync.sh` script is included to help synchronize files between a source directory and a target directory in real-time. This ensures that any changes made in the source directory are reflected in the target directory.
 

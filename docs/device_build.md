@@ -31,10 +31,12 @@
       ![Step Image](assets/rpi_wiring_diagram.jpeg)   
       ![Step Image](assets/rpi_wiring.jpg)
 
-   2. For ESP32 (there are many different revisions):
+   2. For ESP32 (there are many different board revisions):
       1. GND to GND
       2. SIGNAL to D13
       3. 5V to 5V or VIN, depending on the board. VIN is 5V when powering the board from USB.
+      4. You can find the wiring diagram in the [ESP32 Devkit 1 Example Wiring document](esp32_devkit1_exmple_wiring.md).
+      
 5. Solder wires between the LED strip segments. Use three wires between each segment.
 
       ![Step Image](assets/wires_soldered.jpeg)
